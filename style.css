@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    width: 100%;
+    overflow: hidden;
+}
+
+#home {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+#home img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#smcircle{
+    height: 38vw;
+    width: 38vw;
+    border-radius: 100%;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* opacity: 0; */
+}
+
+#circle{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); 
+    height: 120vw;
+    width: 120vw;
+    /* background-color: red; */
+    background-color: transparent;
+    border-radius: 50%;
+    /* opacity: 0; */
+}
+
+#circle img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* opacity: 0; */
+}
+
+#circle #top img:nth-child(1){
+    transform: translate(-50%,-50%) rotate(-180deg) ;
+}
+
+#circle #top img:nth-child(2){
+    transform: translate(-50%,-50%) rotate(-180deg) scale(.7);
+}
+
+#circle #top img:nth-child(3){
+    transform: translate(-50%,-50%) rotate(-180deg) scale(.5);
+}
+
+#circle #btm img:nth-child(1){
+
+}
+
+#circle #btm img:nth-child(2){
+    transform: translate(-50%,-50%) scale(.7);
+}
+
+#circle #btm img:nth-child(3){
+    transform: translate(-50%,-50%) scale(.5);
+}
+
+
+
+#overlay{
+    height: 100vh;
+    width: 100%;
+    background-color: transparent;
+    position: absolute;
+    z-index: 99999;
+}
+
+#nav{
+    display: flex;
+    justify-content: space-between;   
+    align-items: center;
+    padding: 30px 40px 0 40px;
+}
+
+#nav h5{
+    font-family: Neue Haas Grotesk Text Pro ;
+    color: #313131;
+}
+
+#nright{
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+
+#shades{
+    display: flex;
+}
+
+#shades .smcube{
+    height: 10px;
+    width: 10px;
+    /* background-color: red  ; */
+}
+
+#shades .smcube:nth-child(1){
+    background-color: rgb(235, 235, 235);
+}
+#shades .smcube:nth-child(2){
+    background-color: rgb(212.5, 212.5, 212.5);
+}
+#shades .smcube:nth-child(3){
+    background-color: rgb(170, 170, 170);
+}
+#shades .smcube:nth-child(4){
+    background-color: rgb(127.5, 127.5, 127.5);
+}
+#shades .smcube:nth-child(5){
+    background-color: rgb(85, 85, 85);
+}
+#shades .smcube:nth-child(6){
+    background-color: rgb(42.5, 42.5, 42.5);
+}
+
+#nright #shadetext{
+    font-family: "DS-Digital"; 
+    font-size: .6rem;
+    font-weight: 500;
+    color: #313131;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#overlay h1 {        
+    font-family: Neue Haas Grotesk Text Pro ;
+    font-size: 11vw;
+    font-weight: 500;
+    color: rgba(49, 49, 49, 1);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+#center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+}
+
+#center span{
+    font-family: "Neue Haas Grotesk Text Pro";
+    font-size: .85vw;
+    font-weight: normal;
+}
+
+#center span:nth-child(1){
+    margin-bottom: 8px;
+}
+
+#center img{
+    width: 29vw;
+    margin-top: 12px;
+}
+
+#footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+}
+
+#footer img{
+    width: 80px;
+}
+
+#second{
+    height: 100vh;
+    width: 100%;
+    background-color: red;
+}
